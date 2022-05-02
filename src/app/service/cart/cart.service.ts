@@ -13,6 +13,9 @@ export class CartService {
   addToCart(product: Product) {
     this.items.push(product);
   }
+  deleteFromCart(product: Product) {
+    this.items.filter((item) => item != product);
+  }
 
   getItems() {
     return this.items;

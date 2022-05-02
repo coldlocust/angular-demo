@@ -1,0 +1,7 @@
+.product-list {
+  .product-of-list:not(:last-child) {
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid blue;
+  }
+}
