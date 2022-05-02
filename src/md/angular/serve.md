@@ -1,0 +1,5 @@
+service：服务
+服务是类的一个实例，借助Angular的依赖注入体系，可以在应用的任意部分使用它
+
+定义服务，终端打开方式参考crateNewComponent.md
+在终端中通过运行一下命令生成一个cart服务

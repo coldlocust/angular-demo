@@ -61,3 +61,5 @@ sync：同步主线或分支的 Bug。
 ### son-father-component-communicate:父子组件通信
 
 ### route-url-component：路由与组件导航
+
+### manage-data: 管理数据

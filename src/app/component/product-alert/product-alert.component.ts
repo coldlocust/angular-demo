@@ -1,5 +1,5 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
-import { Product, products } from '../products';
+import { Product, products } from '../../products'
 
 /** @Component()装饰器指出它后面的类是组件
  *  @Component()提供有关组件的元数据（包括其选择器、模板和样式）
