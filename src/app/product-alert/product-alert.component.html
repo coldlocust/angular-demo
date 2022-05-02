@@ -1,0 +1,7 @@
+<p *ngIf="product && product.price > 700">
+  <!-- 增加事件绑定，并调用 notify.emit() 方法。 -->
+  <!-- 定义用户单击按钮时发生的行为。当子组件引发事件时，
+  父组件 ProductListComponent（而不是 ProductAlertsComponent）会采取行动。
+  在 product-list.component.ts 中，定义一个 onNotify() 方法，类似于 share() 方法。 -->
+  <button (click)="notify.emit()">Notify Me</button>
+</p>

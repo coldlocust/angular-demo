@@ -19,4 +19,9 @@
   <!-- 将按钮的 click 事件绑定到 product-list.component.ts 中的 share() 方法。
   事件绑定要在此事件用一组圆括号 ( ) 括起来，就比如 <button> 元素上的 (click)。 -->
   <button (click)="share()">Share</button>
+
+  <app-product-alert
+    [product]="product"
+    (notify)="onNotify()"
+  ></app-product-alert>
 </div>
