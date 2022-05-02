@@ -12,7 +12,13 @@
 <div *ngFor="let product of products">
   <h3>
     <!-- 通过属性绑定 [ ] 可以在模板表达式中使用属性值。 -->
-    <a [title]="product.name + ' details'">{{ product.name }}</a>
+    <!-- RouterLink 指令可帮助你自定义 a 元素。在这里，路由或 URL 中包含一个固定的区段 /products。
+    最后一段则是变量，插入当前产品的 id。 例如，id 为 1 的产品的 URL 是 https://getting-started-myfork.stackblitz.io/products/1。 -->
+    <a
+      [title]="product.name + ' details'"
+      [routerLink]="['/products', product.id]"
+      >{{ product.name }}</a
+    >
   </h3>
   <!-- 在 <p> 元素上使用 *ngIf 指令，以便 Angular 只让当前产品有描述 <p> -->
   <p *ngIf="product.description">Description：{{ product.description }}</p>
