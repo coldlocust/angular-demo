@@ -7,8 +7,10 @@
  * @FilePath: \angular-demo\src\app\top-bar\top-bar.component.html
 -->
 <a [routerLink]="['/']">
-    <h1>My Store</h1>
-  </a>
-  
-  <a class="button fancy-button"><i class="material-icons">shopping_cart</i>Checkout</a>
-  
+  <h1>My Store</h1>
+</a>
+
+<!-- 路由导航到/cart -->
+<a routerLink="/cart" class="button fancy-button"
+  ><i class="material-icons">shopping_cart</i>Checkout</a
+>

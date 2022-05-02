@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Product, products } from '../../products';
 // 使用CartService把一个商品添加到购物车中
-import { CartService } from '../../service/cart.service';
+import { CartService } from '../../service/cart/cart.service';
 @Component({
   selector: 'app-product-details',
   templateUrl: './product-details.component.html',

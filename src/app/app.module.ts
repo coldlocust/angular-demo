@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 // 引入路由配置信息
-import { AppRouteModule } from './app.route.module';
+import { AppRouteModule } from './route/app.route.module';
 
 import { ReactiveFormsModule } from '@angular/forms';
 
