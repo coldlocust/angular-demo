@@ -1,0 +1,22 @@
+<!--
+ * @Author: your name
+ * @Date: 2022-05-02 10:53:30
+ * @LastEditTime: 2022-05-02 11:04:01
+ * @LastEditors: Please set LastEditors
+ * @Description: 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+ * @FilePath: \angular-demo\src\app\product-list\product-list.component.html
+-->
+
+<h2>Products</h2>
+<!-- 使用 *ngFor，会把这个 <div> 针对列表中的每个产品进行复写。 -->
+<div *ngFor="let product of products">
+  <h3>
+    <!-- 通过属性绑定 [ ] 可以在模板表达式中使用属性值。 -->
+    <a [title]="product.name + ' details'">{{ product.name }}</a>
+  </h3>
+  <!-- 在 <p> 元素上使用 *ngIf 指令，以便 Angular 只让当前产品有描述 <p> -->
+  <p *ngIf="product.description">Description：{{ product.description }}</p>
+  <!-- 将按钮的 click 事件绑定到 product-list.component.ts 中的 share() 方法。
+  事件绑定要在此事件用一组圆括号 ( ) 括起来，就比如 <button> 元素上的 (click)。 -->
+  <button (click)="share()">Share</button>
+</div>
