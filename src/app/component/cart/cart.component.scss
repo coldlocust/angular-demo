@@ -1,4 +1,12 @@
+.cart-item {
+  > span {
+    display: inline-flex;
+    align-items: center;
+  }
+}
+
 .cart-empty-item {
+  max-width: 200px;
   margin-top: 20px;
   background-color: skyblue;
 }

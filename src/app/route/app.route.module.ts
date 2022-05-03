@@ -7,6 +7,7 @@ import { CartComponent } from '../component/cart/cart.component';
 
 //配置路由
 const routes: Routes = [
+  // 默认主页展示的组件
   { path: '', component: ProductListComponent },
   // 添加产品详情的路由，其 path 为 products/:productId，其 component 为 ProductDetailsComponent。
   { path: 'products/:productId', component: ProductDetailsComponent },

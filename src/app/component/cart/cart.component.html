@@ -1,6 +1,7 @@
 <div class="cart-item" *ngFor="let item of items">
-  <span>{{ item.name }}</span>
-  <span>{{ item.price | currency }}</span>
+  <span>{{ item.product.name }}</span>
+  <span>{{ item.product.price | currency }}</span>
+  <span>{{ "goodNumber:" + item.num }}</span>
   <button (click)="deleteFromCart(item)">remove goods</button>
 </div>
 <div class="cart-empty-item" *ngIf="items.length === 0">the cart is empty</div>

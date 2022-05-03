@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 // Angular 路由器来组合 products 数据和路由信息以显示每个产品的特定详情。
 import { ActivatedRoute } from '@angular/router';
-import { Product, products } from '../../products';
+import { Product, products } from '../../res/products';
 // 使用CartService把一个商品添加到购物车中
 import { CartService } from '../../service/cart/cart.service';
 @Component({

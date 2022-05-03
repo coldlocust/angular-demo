@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CartService } from 'src/app/service/cart/cart.service';
-import { Product } from 'src/app/products';
+import { Product } from 'src/app/res/products';
+import { CartProduct } from 'src/app/res/cart.product';
 @Component({
   selector: 'app-cart',
   templateUrl: './cart.component.html',
@@ -13,9 +14,12 @@ export class CartComponent implements OnInit {
   constructor(private cartService: CartService) {}
 
   ngOnInit(): void {
+    console.log('--------购物车组件');
     console.log(this);
   }
-  deleteFromCart(product: Product) {
+  deleteFromCart(product: CartProduct) {
+    console.log('--------从购物车组件中删除');
+    console.log(product);
     this.cartService.deleteFromCart(product);
     window.alert('your current product has been deleted from the cart');
   }
